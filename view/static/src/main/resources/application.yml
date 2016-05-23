@@ -1,0 +1,65 @@
+server:
+    port: 8080
+
+spring:
+    #datasource
+    datasource:
+        url: jdbc:mysql://127.0.0.1:3306/user
+        driverClassName: com.mysql.jdbc.Driver
+        username: root
+        password: root
+        auto-commit: true
+    #jpa
+    jpa:
+        properties:
+            showSql: true
+            generateDdl: true
+            database: MYSQL
+            hibernate:
+                show_sql: true
+                dialect: org.hibernate.dialect.MySQLDialect
+    velocity:
+        checkTemplateLocation: true
+        ##resource-loader-path: classpath:template
+        cache: true
+        suffix: .vm
+        expose-spring-macro-helpers: true
+        content-type: text/html;charset=UTF-8
+        properties:
+            input:
+                encoding: utf-8
+            output:
+                encoding: utf-8
+    #spring.devtools.restart
+    devtools:
+        reload:
+            trigger-file: .reloadtrigger
+        restart:
+            exclude: static/**,public/**
+            enabled: true
+    ioc:
+        componentScan:
+            basePackages: com.jeremie.spring
+        jpaRepositories:
+            basePackages: com.jeremie.spring.*.dao
+        entityScan:
+            basePackages: com.jeremie.spring.*.entity
+    jpaTransactionManager:
+        txAdvice:
+            methodsPrefix:
+                - delete
+                - sava
+                - add
+                - update
+                - sendOpen
+                - sendClose
+                - handle
+                - batch
+#log
+logging:
+    file: spring-boot-5-log.log
+    level:
+        org:
+            springframework:
+                web: DEBUG
+            hibernate: ERROR
