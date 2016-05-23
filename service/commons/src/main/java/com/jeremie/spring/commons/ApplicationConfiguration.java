@@ -1,4 +1,4 @@
-package com.jeremie.service.commons.commons;
+package com.jeremie.spring.commons;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

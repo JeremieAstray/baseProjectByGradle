@@ -1,4 +1,4 @@
-package com.jeremie.service.commons.commons;
+package com.jeremie.spring.commons;
 
 import org.apache.log4j.Logger;
 import org.aspectj.lang.JoinPoint;

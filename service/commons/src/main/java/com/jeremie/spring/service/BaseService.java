@@ -1,4 +1,4 @@
-package com.jeremie.service.commons.service;
+package com.jeremie.spring.service;
 
 import org.apache.log4j.Logger;
 

@@ -9,3 +9,5 @@ MANIFEST.MF
 *.iml
 .idea/*
 deploy/
+build/
+out/

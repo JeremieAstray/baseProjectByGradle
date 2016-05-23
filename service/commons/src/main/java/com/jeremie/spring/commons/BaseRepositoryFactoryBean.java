@@ -1,4 +1,4 @@
-package com.jeremie.service.commons.commons;
+package com.jeremie.spring.commons;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean;

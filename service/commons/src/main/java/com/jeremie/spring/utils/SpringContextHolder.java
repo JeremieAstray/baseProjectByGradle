@@ -1,4 +1,4 @@
-package com.jeremie.service.commons.utils;
+package com.jeremie.spring.utils;
 
 import org.apache.commons.lang.Validate;
 import org.apache.log4j.Logger;

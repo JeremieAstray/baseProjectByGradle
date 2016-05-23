@@ -1,4 +1,4 @@
-package com.jeremie.service.commons.dao;
+package com.jeremie.spring.dao;
 
 import com.jeremie.spring.entity.BaseEntity;
 import org.springframework.data.jpa.repository.JpaRepository;

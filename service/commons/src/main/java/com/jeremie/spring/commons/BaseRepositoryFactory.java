@@ -1,4 +1,4 @@
-package com.jeremie.service.commons.commons;
+package com.jeremie.spring.commons;
 
 
 import com.jeremie.spring.dao.BaseRepositoryImpl;

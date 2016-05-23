@@ -1,4 +1,4 @@
-package com.jeremie.service.commons.entity;
+package com.jeremie.spring.entity;
 
 import javax.persistence.*;
 import java.io.Serializable;
